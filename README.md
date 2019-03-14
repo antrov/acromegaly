@@ -26,7 +26,7 @@ Designed and created by Msc Leszek Andrzejewski.
 
 [Eagle](https://www.autodesk.com/products/eagle/overview) files used to design and manufacture the base PCB with a BLE controller and driver connectors. Besides, board includes an op-amp used to amplify current measurements for ADC, as well as a 8MB Flash memory. 
 
-![PCB Design](https://raw.githubusercontent.com/antrov/acromegaly/master/docs/pcb.png) ![Schematic](https://raw.githubusercontent.com/antrov/acromegaly/master/docs/schematic.png)
+![PCB Design](https://raw.githubusercontent.com/antrov/acromegaly/master/docs/pcb.png) ![PCB real photo](https://raw.githubusercontent.com/antrov/acromegaly/master/docs/pcb_3.png)
 
 ## BLE controller (nRF51)
 
