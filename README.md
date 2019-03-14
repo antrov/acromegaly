@@ -1,37 +1,55 @@
 # Acromegaly
 
-Adjustable height desk, with provided full CAD plans, controller circuit and iOS client
+Acromegaly is an open source project of the desk with automatically adjustable height. Position of the desk is controlled by Bluetooth Low Energy interface and dedicated iOS Application. 
 
-Vue.js is an MIT-licensed open source project with its ongoing development made possible entirely by the support of these awesome backers. If you'd like to join them, please consider:
+Provided designs allows
+* to build a mechanical frame of the desk, 
+* to manufacture and program a controller and finally 
+* to build a BLE client app. 
 
-Vue (pronounced `/vjuː/`, like view) is a **progressive framework** for building user interfaces. It is designed from the ground up to be incrementally adoptable, and can easily scale between a library and a framework depending on different use cases. It consists of an approachable core library that focuses on the view layer only, and an ecosystem of supporting libraries that helps you tackle complexity in large Single-Page Applications.
+Total cost of components, manufacture and final polish is around 100$. 
 
 
-## Ecosystem
+## CAD project
 
+[GitHub repo](https://github.com/antrov/acromegaly/tree/master/CAD)
+ 
+Full documentation of mechanical parts of the desk: frame, rails, driver mounting and desktop. Supplied in english and polish.
 
-
-### CAD project
+Designed and created by Msc Leszek Andrzejewski.
 
 ![CAD project](https://raw.githubusercontent.com/antrov/acromegaly/master/docs/cad.jpg)
 
-### PCB schematic and design
+## PCB schematic and design
 
-![PCB Design](https://raw.githubusercontent.com/antrov/acromegaly/master/docs/pcb.png)![Schematic](https://raw.githubusercontent.com/antrov/acromegaly/master/docs/schematic.png)
+[GitHub repo](https://github.com/antrov/acromegaly/tree/master/PCB)
 
-### BLE controller (nRF51)
+[Eagle](https://www.autodesk.com/products/eagle/overview) files used to design and manufacture the base PCB with a BLE controller and driver connectors. Besides, board includes an op-amp used to amplify current measurements for ADC, as well as a 8MB Flash memory. 
+
+![PCB Design](https://raw.githubusercontent.com/antrov/acromegaly/master/docs/pcb.png) ![Schematic](https://raw.githubusercontent.com/antrov/acromegaly/master/docs/schematic.png)
+
+## BLE controller (nRF51)
 
 [GitHub repo](https://github.com/antrov/acromegaly-nrf51)
 
-### BLE client (iOS)
+ANSI C code developed for the nRF51 MCU and based on its SDK. The brain of a desk controller, exposes interface for receiving commands from Bluetooth Low Energy and to broadcasts informations like: 
+* current height, 
+* target height, 
+* movement state and direction, 
+* current power 
+
+Configured to compile with wide available and free toolchains.
+
+## BLE client (iOS)
 
 [GitHub repo](https://github.com/antrov/acromegaly-ios)
 
+Swift iOS application used to present visually state of the desk and control it remotely.
+
+* auto scanning and connecting to dedicated Acromegaly BLE device
+* visual representation of current and requested desk height
+* setting exact height of a desk
+* swipe gesture to set bounding positions
+* storing of the favourites positions
+
 ![iOS Client App](https://raw.githubusercontent.com/antrov/acromegaly-ios/master/docs/height.gif) ![iOS Client App](https://raw.githubusercontent.com/antrov/acromegaly-ios/master/docs/favs.gif)
-
-
-## Start up
-
-
-
-https://electronut.in/nrf51-dk-external-programming/
