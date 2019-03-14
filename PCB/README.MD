@@ -19,3 +19,9 @@
 ## Flashing
 
 During development on DK board, flashing is done by integrated JLink (SEGGER) programmer. In order to flash Acromegaly PCB it is necessary to connect DK VVC/GND instead of LM3671 and SWDIO/SWCLK to dedicated PCB connectors accoriding to [following rules](https://electronut.in/nrf51-dk-external-programming/)
+
+## Slot detector
+
+[Mask PDF](https://github.com/antrov/acromegaly/tree/master/PCB/gap_mask.pdf)
+
+![Slot senor in action](https://raw.githubusercontent.com/antrov/acromegaly/master/docs/slot_sensor.gif)
