@@ -1,4 +1,4 @@
-# Acromegaly
+![Header Image](https://raw.githubusercontent.com/antrov/acromegaly/master/docs/header.png)
 
 Acromegaly is an open source project of the desk with automatically adjustable height. Position of the desk is controlled by Bluetooth Low Energy interface and dedicated iOS Application. 
 
