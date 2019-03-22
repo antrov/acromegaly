@@ -67,8 +67,6 @@ Copyright 2019 Hubert Andrzejewski
 This code is distributed under the terms and conditions of the MIT license.
 
 ```
-Copyright (C) 2019 lexrus.com
-
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
 the Software without restriction, including without limitation the rights to
