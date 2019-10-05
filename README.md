@@ -9,6 +9,7 @@ Provided designs allows
 
 Total cost of components, manufacture and final polish is around 100$. 
 
+![Demo GIF](https://raw.githubusercontent.com/antrov/acromegaly/master/docs/demo.gif)
 
 ## CAD project
 
